@@ -1,0 +1,4 @@
+With limited knowledge on Git, and not enough time to study it well, I've forked the MCCI-Catena.
+Goal is to see if I can make it suitable for HypriotOS v1.9.0 running on Raspberry Pi 3 B+
+Harrass me if you feel the need.
+xenek
