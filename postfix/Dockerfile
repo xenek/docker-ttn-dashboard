@@ -2,7 +2,7 @@
 # Dockerfile for building POSTFIX 
 #
 # Build the Postfix  using phusion base image 
-FROM phusion/baseimage 
+FROM armv7/armhf-baseimage
 
 # some basic package installation for troubleshooting
 RUN apt-get update && apt-get install -y \
