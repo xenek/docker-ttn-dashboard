@@ -3,7 +3,8 @@
 #
 
 # build the node red image using the offical node red distribution
-FROM nodered/node-red-docker:0.16.2
+#XENEK MOD FOR RPI 3B+
+FROM nodered/node-red-docker:arm
 
 # To avoid SSL certification issue
 ENV NODE_TLS_REJECT_UNAUTHORIZED=0
