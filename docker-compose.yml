@@ -124,7 +124,8 @@ services:
 
   influxdb:
     restart: unless-stopped
-    image: influxdb:latest
+    #mod by xenek
+    image: arm32v7/influxdb
     volumes:
       - "${TTN_DASHBOARD_DATA}influxdb:/var/lib/influxdb"
     environment:
@@ -164,7 +165,8 @@ services:
 
   grafana:
     restart: unless-stopped
-    image: grafana/grafana:latest
+    #mod by xenek
+    image: rycus86/grafana:armhf
     volumes:
       - "${TTN_DASHBOARD_DATA}grafana:/var/lib/grafana"
     environment:
