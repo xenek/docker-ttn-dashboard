@@ -3,7 +3,8 @@
 #
 
 # Start from Phusion.
-FROM phusion/baseimage
+# XENEK MOD - CHANGE TO ARMV7 ARMHF BASEIMAGE (ORIGINALLY OLD PHUSION)
+FROM armv7/armhf-baseimage
 
 RUN /usr/bin/apt-get update && /usr/bin/apt-get install software-properties-common -y
 RUN /usr/bin/add-apt-repository ppa:certbot/certbot && /usr/bin/apt-get update && /usr/bin/apt-get install apache2 -y
