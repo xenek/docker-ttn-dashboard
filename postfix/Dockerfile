@@ -24,7 +24,7 @@ run postconf -e smtp_generic_maps=hash:/etc/postfix/generic
 run postconf -e mynetworks="127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 172.18.0.0/16" 
  
 # This will replace local mail addresses by valid Internet addresses when mail leaves the machine via SMTP. so please change it according to container.
-run echo "root@aa7fde2ee7f1 iotmail@example.com" > /etc/postfix/generic
+run echo "root@aa7fde2ee7f1 xenek@endtech.com.au" > /etc/postfix/generic
 run postmap /etc/postfix/generic
 
 # mail command would be used for sending mails
