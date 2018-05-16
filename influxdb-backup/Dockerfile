@@ -3,7 +3,7 @@
 #
 
 # Build the extra-instance using phusion base image 
-FROM phusion/baseimage
+FROM armv7/armhf-baseimage
 
 # Install influxdb database
 RUN curl -sL https://repos.influxdata.com/influxdb.key | apt-key add -
